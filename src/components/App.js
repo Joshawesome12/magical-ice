@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
+import Slider from './Slider'
+import '../styles/app.sass'
 
 class App extends Component {
   render() {
+
     return (
       <div>
-        <h1>Welcome to my boilerplate</h1>
+        <div className='title'>
+          <h1>Magical Ice</h1>
+        </div>
+
+
+        <Slider/>
       </div>
     )
   }
