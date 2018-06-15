@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 const RightArrow = (props) => {
 
   let styles = {
-    color: 'blue'
+    color: '#64208d'
   }
 
   return (

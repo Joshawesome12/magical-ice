@@ -8,11 +8,12 @@ class App extends Component {
     return (
       <div>
         <div className='title'>
-          <h1>Magical Ice</h1>
+          <img className="title-logo" src={require('../Resources/Magical.png')} alt='Magical Ice'/>
         </div>
 
-
-        <Slider/>
+        <div className='slider'>
+          <Slider/>
+        </div>
       </div>
     )
   }

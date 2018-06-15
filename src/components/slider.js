@@ -21,6 +21,7 @@ export default class Slider extends Component {
     return (
       <div className="slider" >
 
+        <LeftArrow previousSlide={this.previousSlide} />
         {/* Slides go here */}
         { this.state.slideCount === 1 ? <SlideOne /> : null }
         { this.state.slideCount === 2 ? <SlideTwo /> : null }
@@ -28,7 +29,6 @@ export default class Slider extends Component {
 
         {/* Arrow Functionality */}
         <RightArrow nextSlide={this.nextSlide} />
-        <LeftArrow previousSlide={this.previousSlide} />
 
       </div>
     );
