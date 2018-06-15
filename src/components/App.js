@@ -14,6 +14,11 @@ class App extends Component {
         <div className='slider'>
           <Slider/>
         </div>
+        <div className='footer'>
+          <div className='about'>
+            <h1>About</h1>
+          </div>
+        </div>
       </div>
     )
   }
