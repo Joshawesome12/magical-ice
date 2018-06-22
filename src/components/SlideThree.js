@@ -7,7 +7,7 @@ const SlideThree= (props) => {
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     height: '500px',
-    width: '1000px'
+    width: '100vw'
   }
 
   return <div style={background} className="slide"></div>

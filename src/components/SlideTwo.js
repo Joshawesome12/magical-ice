@@ -7,7 +7,7 @@ const SlideTwo= (props) => {
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     height: '500px',
-    width: '1000px'
+    width: '100vw'
   }
 
 
