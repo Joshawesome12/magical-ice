@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
-import Slider from './Slider'
-import '../styles/app.sass'
+import Homepage from './Homepage';
+import '../styles/app.sass';
 
 class App extends Component {
+  constructor(props){
+    super(props)
+      this.state = {
+        show:"home"
+      }
+
+  }
   render() {
 
     return (
@@ -16,9 +23,14 @@ class App extends Component {
             <a href="#about">About</a>
         </div>
 
-        <div className='slider'>
+        {
+          this.state.show === 'home'? <Homepage/> : null
+
+        }
+
+        {/* <div className='slider'>
           <Slider/>
-        </div>
+        </div> */}
         {/* <div className='about'>
           <h1>About</h1>
         </div> */}
