@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <div>
         <div className='title'>
-          <img className="title-logo" src={require('../Resources/Magical.png')} alt='Magical Ice'/>
+          <img className="title-logo" src={require('../Resources/Magical-Ice.png')} alt='Magical Ice'/>
         </div>
         <div className='navbar'>
             <a href="#Home">Home</a>

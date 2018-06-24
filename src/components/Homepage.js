@@ -3,7 +3,12 @@ import Slider from './Slider';
 
 
 export default class Homepage extends Component {
-	<div className='slider'>
-		<Slider/>
-	</div>
+	render(){
+		return (
+			<div className='slider'>
+				<Slider/>
+			</div>
+
+		)
+	}
 }
