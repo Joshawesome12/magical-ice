@@ -45,13 +45,6 @@ class App extends Component {
         <div>
           {something}
         </div>
-
-        {/* <div className='slider'>
-          <Slider/>
-        </div> */}
-        {/* <div className='about'>
-          <h1>About</h1>
-        </div> */}
         <div className='footer'>
           <div className='icons'>
             <a href="https://www.facebook.com/pages/Magical-Ice/442140369571807">
