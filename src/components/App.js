@@ -8,26 +8,30 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      showHome:true,
-      showMenu:false,
-      showAbout:false
+      showWhat:'home'
     }
 
   }
 
   showHome = () =>{
-    // this.setState({showHome:true,"showMenu":false,"showAbout":false})
+    this.setState({showWhat:'home'})
   }
 
   showMenu = () =>{
-    // this.setState({showHome:false,"showMenu":true,"showAbout":false})
+    this.setState({showWhat:'menu'})
   }
 
   showAbout = () =>{
-    // this.setState({showHome:false,"showMenu":false,"showAbout":true})
+    this.setState({showWhat:'about'})
   }
 
   render() {
+
+    let something;
+    if (this.state.showWhat === 'menu'){something = <Menu/>}
+     else if (this.state.showWhat ==='about'){something = <About/>}
+     else {something = <Homepage/>}
+
     return (
       <div>
         <div className='title'>
@@ -39,11 +43,8 @@ class App extends Component {
             <a onClick={this.showAbout.bind(this)}>About</a>
         </div>
         <div>
-
-          {this.state.showHome === true? <Homepage/> : null}
-          {/* {this.state.showMenu === true? <Menu/> : null} */}
-          {/* {this.state.showAbout === true? <About/> : null} */}
-          </div>
+          {something}
+        </div>
 
         {/* <div className='slider'>
           <Slider/>
