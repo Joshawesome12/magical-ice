@@ -8,29 +8,29 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      showWhat:'home'
+      display:'home'
     }
 
   }
 
   showHome = () =>{
-    this.setState({showWhat:'home'})
+    this.setState({display:'home'})
   }
 
   showMenu = () =>{
-    this.setState({showWhat:'menu'})
+    this.setState({display:'menu'})
   }
 
   showAbout = () =>{
-    this.setState({showWhat:'about'})
+    this.setState({display:'about'})
   }
 
   render() {
 
-    let something;
-    if (this.state.showWhat === 'menu'){something = <Menu/>}
-     else if (this.state.showWhat ==='about'){something = <About/>}
-     else {something = <Homepage/>}
+    let mainContent;
+    if (this.state.display === 'menu'){mainContent = <Menu/>}
+     else if (this.state.display ==='about'){mainContent = <About/>}
+     else {mainContent = <Homepage/>}
 
     return (
       <div>
@@ -43,7 +43,7 @@ class App extends Component {
             <a onClick={this.showAbout.bind(this)}>About</a>
         </div>
         <div>
-          {something}
+          {mainContent}
         </div>
         <div className='footer'>
           <div className='icons'>
