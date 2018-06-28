@@ -1,32 +1,49 @@
 import React, { Component } from 'react';
 import Homepage from './Homepage';
+import Menu from './Menu';
+import About from './About';
 import '../styles/app.sass';
 
 class App extends Component {
   constructor(props){
     super(props)
-      this.state = {
-        show:"home"
-      }
+    this.state = {
+      showHome:true,
+      showMenu:false,
+      showAbout:false
+    }
 
   }
-  render() {
 
+  showHome = () =>{
+    // this.setState({showHome:true,"showMenu":false,"showAbout":false})
+  }
+
+  showMenu = () =>{
+    // this.setState({showHome:false,"showMenu":true,"showAbout":false})
+  }
+
+  showAbout = () =>{
+    // this.setState({showHome:false,"showMenu":false,"showAbout":true})
+  }
+
+  render() {
     return (
       <div>
         <div className='title'>
           <img className="title-logo" src={require('../Resources/Magical-Ice.png')} alt='Magical Ice'/>
         </div>
         <div className='navbar'>
-            <a href="#Home">Home</a>
-            <a href="#menu">Menu</a>
-            <a href="#about">About</a>
+            <a onClick={this.showHome.bind(this)}>Home</a>
+            <a onClick={this.showMenu.bind(this)}>Menu</a>
+            <a onClick={this.showAbout.bind(this)}>About</a>
         </div>
+        <div>
 
-        {
-          this.state.show === 'home'? <Homepage/> : null
-
-        }
+          {this.state.showHome === true? <Homepage/> : null}
+          {/* {this.state.showMenu === true? <Menu/> : null} */}
+          {/* {this.state.showAbout === true? <About/> : null} */}
+          </div>
 
         {/* <div className='slider'>
           <Slider/>
