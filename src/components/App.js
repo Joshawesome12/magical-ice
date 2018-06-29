@@ -38,9 +38,13 @@ class App extends Component {
           <img className="title-logo" src={require('../Resources/Magical-Ice.png')} alt='Magical Ice'/>
         </div>
         <div className='navbar'>
+          <div className='row1'>
             <a onClick={this.showHome.bind(this)}>Home</a>
+          </div>
+          <div className='row2'>
             <a onClick={this.showMenu.bind(this)}>Menu</a>
             <a onClick={this.showAbout.bind(this)}>About</a>
+          </div>
         </div>
         <div>
           {mainContent}
@@ -48,7 +52,7 @@ class App extends Component {
         <div className='footer'>
           <div className='icons'>
             <a href="https://www.facebook.com/pages/Magical-Ice/442140369571807">
-              <img className="facebook" src={require('../resources/facebook.png')} alt='facebook icon'/>
+              <img className="facebook" src={require('../resources/likeus.png')} alt='facebook icon'/>
             </a>
           </div>
           <div className='adress'>

@@ -11,15 +11,18 @@ export default class Menu extends Component {
   }
 
   render() {
-    return (<div className='menu'>
-      <h1>This is the menu Component</h1>
-      <h2>Item</h2>
-      <h2>Item</h2>
-      <h2>Item</h2>
-      <h2>Item</h2>
-      <h2>Item</h2>
-      <h2>Item</h2>
-      <h2>Item</h2>
+    return (
+      <div className='menu'>
+      <h1 className="menu-title">This is the menu Component</h1>
+      <div className='menu-items'>
+        <h2>Item</h2>
+        <h2>Item</h2>
+        <h2>Item</h2>
+        <h2>Item</h2>
+        <h2>Item</h2>
+        <h2>Item</h2>
+        <h2>Item</h2>
+      </div>
     </div>
   )
   }
