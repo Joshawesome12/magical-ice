@@ -3,12 +3,13 @@ import Homepage from './Homepage';
 import Menu from './Menu';
 import About from './About';
 import '../styles/app.sass';
+import Slider from './Slider'
 
 class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      display:'home'
+      display:'about'
     }
 
   }
@@ -36,6 +37,9 @@ class App extends Component {
       <div>
         <div className='title'>
           <img className="title-logo" src={require('../Resources/Magical-Ice.png')} alt='Magical Ice'/>
+          <div>
+            <Slider/>
+          </div>
         </div>
         <div className='navbar'>
           <div className='row1'>
