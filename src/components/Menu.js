@@ -16,12 +16,19 @@ export default class Menu extends Component {
       <h1 className="menu-title">This is the menu Component</h1>
       <div className='menu-items'>
         <h2>Item</h2>
+        <img src='' alt=''/>
         <h2>Item</h2>
+        <img src='' alt=''/>
         <h2>Item</h2>
+        <img src='' alt=''/>
         <h2>Item</h2>
+        <img src='' alt=''/>
         <h2>Item</h2>
+        <img src='' alt=''/>
         <h2>Item</h2>
+        <img src='' alt=''/>
         <h2>Item</h2>
+        <img src='' alt=''/>
       </div>
     </div>
   )
