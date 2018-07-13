@@ -18,7 +18,7 @@ export default class Menu extends Component {
         <h2>Item</h2>
         <img src='../Resources/sno-cones-background.gif' alt='snow cone'/>
         <h2>Item</h2>
-        <img src='' alt=''/>
+        <img src='../Resources/sno-cones-background.gif' alt='snow cone'/>
         <h2>Item</h2>
         <img src='' alt=''/>
         <h2>Item</h2>
