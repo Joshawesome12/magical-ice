@@ -51,7 +51,7 @@ class App extends Component {
           </div>
         </div>
         <div>
-          {mainContent}
+          {/* {mainContent} */}
         </div>
         <div className='footer'>
           <div className='icons'>
